@@ -39,7 +39,7 @@ func passwordGenerator() {
 	}
 	correctPassword := password[:passwordLength]
 	fmt.Printf("\t\tGenerated password: %s\n", string(correctPassword))
-	fmt.Printf("\t\tChosen length: %d\n", len(correctPassword))
+	fmt.Printf("\t\tSelected length: %d\n", len(correctPassword))
 	fmt.Print(isValid(correctPassword))
 	repeat()
 }
