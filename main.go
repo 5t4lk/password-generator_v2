@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	passwordGenerator()
+	passwordGenerator() //
 }
 
 func passwordGenerator() {
