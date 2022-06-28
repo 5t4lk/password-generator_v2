@@ -12,11 +12,11 @@ func main() {
 }
 
 func passwordGenerator() {
-	lowLet := "qwertyuiopasdfghjklzxcvbnm"
-	upLet := "QWERTYUIOPASDFGHJKLZXCVBNM"
-	nums := "0123456789"
-	symbols := "!?@#$^&*()_-[]"
-	password := ""
+	lowLet := "qwertyuiopasdfghjklzxcvbnm" //
+	upLet := "QWERTYUIOPASDFGHJKLZXCVBNM" //
+	nums := "0123456789" // 
+	symbols := "!?@#$^&*()_-[]" //
+	password := "" //
 
 	var passwordLength int
 
