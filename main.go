@@ -76,7 +76,7 @@ func repeat() {
 	var choice int
 
 	fmt.Print("Do you want to create one more password?\n[0][1] <- ?\t") // If user want to create one more password,
-	fmt.Scan(&choice)                                                    // programm calls function passwordGenerator() again
+	fmt.Scan(&choice)                                                    // programm calls function passwordGenerator() again.
 
 	if choice == 0 { // If he doesn't want to create one more password,
 		fmt.Print("Thanks for using my password generator!\n") // programm returns message "Thanks for using..."
