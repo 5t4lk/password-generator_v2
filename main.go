@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	passwordGenerator() // Calling a function
+	passwordGenerator() // Calling a function.
 }
 
 func passwordGenerator() {
@@ -36,10 +36,10 @@ func passwordGenerator() {
 		randNums := nums[rand.Intn(len(nums))]                                                      // Initialisating a variable and fill it with random numbers.
 		randSymbols := symbols[rand.Intn(len(symbols))]                                             // Initialisating a variable and fill it with random special symbols.
 		password += string(randLowLet) + string(randUpLet) + string(randNums) + string(randSymbols) // Initialisating a variable and fill it with
-	} // the result of the previously initialised variables.
+	} // 												    // the result of the previously initialised variables.
 	correctPassword := password[:passwordLength]                        // Cut off the length user want and initialise the variable with this length.
-	fmt.Printf("\t\tGenerated password: %s\n", string(correctPassword)) // Output
-	fmt.Printf("\t\tSelected length: %d\n", len(correctPassword))       // Output
+	fmt.Printf("\t\tGenerated password: %s\n", string(correctPassword)) // Output.
+	fmt.Printf("\t\tSelected length: %d\n", len(correctPassword))       // Output.
 	fmt.Print(isValid(correctPassword))                                 // Output the result of function isValid().
 	repeat()
 }
@@ -56,7 +56,7 @@ func isValid(check string) string {
 		enterRune := []rune(check)                           // Creating slice of runes.
 		if unicode.Is(unicode.Latin, enterRune[0]) == true { // With help of package "unicode" checking first letter for latin symbols.
 			counter := 0                      // Initialisating a counter for user password.
-			for i := 0; i < len(check); i++ { // Creating cycle with counter inside for check how many symbols in password
+			for i := 0; i < len(check); i++ { // Creating cycle with counter inside for check how many symbols in password.
 				counter++
 			}
 			if counter >= 5 { // If our counter, which we are created, have more than 4 symbols
